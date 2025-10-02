@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace ShapeSort
 {
-    internal class Basket
+    public enum Shape
     {
+        Circle,
+        Triangle,
+        Square,
+        Etc
+    }
     }
 }
