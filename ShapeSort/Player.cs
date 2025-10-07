@@ -8,13 +8,13 @@ namespace ShapeSort
 {
     public class Player
     {
-        static int life;
+        int life;
 
         public int Life { get; set; }
 
         public Player()
         {
-            Life = 5;
+            life = 5;
         }
 
         /// <summary>
