@@ -25,26 +25,23 @@ namespace ShapeSort
         /// <returns>각 키에 할당된 Shape 열거형</returns>
         public Shape GetPlayerInput()
         {
-            bool isValid = false;
-            while (!isValid)
+            while (true)
             {
                 ConsoleKeyInfo input = Console.ReadKey(true);
                 switch (input.KeyChar)
                 {
-                    case 'W':
+                    case 'w':
                         return Shape.Etc;
-                    case 'A':
+                    case 'a':
                         return Shape.Circle;
-                    case 'S':
-                        return Shape.Triangle;
-                    case 'D':
+                    case 's':
                         return Shape.Square;
+                    case 'd':
+                        return Shape.Triangle;
                     default:
                         continue;
                 }
-                isValid = true;
             }
-            return Shape.Etc;
         }
 
         /// <summary>
