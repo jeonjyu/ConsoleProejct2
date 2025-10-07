@@ -3,15 +3,23 @@
   "WorkspaceRootPath": "C:\\Users\\jihoo\\Documents\\GitHub\\ConsoleProejct2\\ShapeSort\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{65E31734-C8C8-48D3-AFAE-165DB1B27EC8}|ShapeSort.csproj|c:\\users\\jihoo\\documents\\github\\consoleproejct2\\shapesort\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{65E31734-C8C8-48D3-AFAE-165DB1B27EC8}|ShapeSort.csproj|C:\\Users\\jihoo\\Documents\\GitHub\\ConsoleProejct2\\ShapeSort\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{65E31734-C8C8-48D3-AFAE-165DB1B27EC8}|ShapeSort.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65E31734-C8C8-48D3-AFAE-165DB1B27EC8}|ShapeSort.csproj|c:\\users\\jihoo\\documents\\github\\consoleproejct2\\shapesort\\shapequeue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65E31734-C8C8-48D3-AFAE-165DB1B27EC8}|ShapeSort.csproj|solutionrelative:shapequeue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65E31734-C8C8-48D3-AFAE-165DB1B27EC8}|ShapeSort.csproj|c:\\users\\jihoo\\documents\\github\\consoleproejct2\\shapesort\\screen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65E31734-C8C8-48D3-AFAE-165DB1B27EC8}|ShapeSort.csproj|solutionrelative:screen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{65E31734-C8C8-48D3-AFAE-165DB1B27EC8}|ShapeSort.csproj|c:\\users\\jihoo\\documents\\github\\consoleproejct2\\shapesort\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{65E31734-C8C8-48D3-AFAE-165DB1B27EC8}|ShapeSort.csproj|solutionrelative:player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{65E31734-C8C8-48D3-AFAE-165DB1B27EC8}|ShapeSort.csproj|c:\\users\\jihoo\\documents\\github\\consoleproejct2\\shapesort\\basket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{65E31734-C8C8-48D3-AFAE-165DB1B27EC8}|ShapeSort.csproj|C:\\Users\\jihoo\\Documents\\GitHub\\ConsoleProejct2\\ShapeSort\\basket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{65E31734-C8C8-48D3-AFAE-165DB1B27EC8}|ShapeSort.csproj|solutionrelative:basket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -22,30 +30,56 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Screen.cs",
+              "DocumentMoniker": "C:\\Users\\jihoo\\Documents\\GitHub\\ConsoleProejct2\\ShapeSort\\Screen.cs",
+              "RelativeDocumentMoniker": "Screen.cs",
+              "ToolTip": "C:\\Users\\jihoo\\Documents\\GitHub\\ConsoleProejct2\\ShapeSort\\Screen.cs",
+              "RelativeToolTip": "Screen.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAxwA0AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-07T13:34:24.809Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ShapeQueue.cs",
+              "DocumentMoniker": "C:\\Users\\jihoo\\Documents\\GitHub\\ConsoleProejct2\\ShapeSort\\ShapeQueue.cs",
+              "RelativeDocumentMoniker": "ShapeQueue.cs",
+              "ToolTip": "C:\\Users\\jihoo\\Documents\\GitHub\\ConsoleProejct2\\ShapeSort\\ShapeQueue.cs",
+              "RelativeToolTip": "ShapeQueue.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAiwBsAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-07T12:57:33.486Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Basket.cs",
               "DocumentMoniker": "C:\\Users\\jihoo\\Documents\\GitHub\\ConsoleProejct2\\ShapeSort\\Basket.cs",
               "RelativeDocumentMoniker": "Basket.cs",
               "ToolTip": "C:\\Users\\jihoo\\Documents\\GitHub\\ConsoleProejct2\\ShapeSort\\Basket.cs",
               "RelativeToolTip": "Basket.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAxwAsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-02T08:24:48.975Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Player.cs",
               "DocumentMoniker": "C:\\Users\\jihoo\\Documents\\GitHub\\ConsoleProejct2\\ShapeSort\\Player.cs",
               "RelativeDocumentMoniker": "Player.cs",
               "ToolTip": "C:\\Users\\jihoo\\Documents\\GitHub\\ConsoleProejct2\\ShapeSort\\Player.cs",
               "RelativeToolTip": "Player.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAkwEAAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-02T08:24:36.907Z",
               "EditorCaption": ""
@@ -58,7 +92,7 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\jihoo\\Documents\\GitHub\\ConsoleProejct2\\ShapeSort\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAkwCIAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-02T08:24:18.988Z",
               "EditorCaption": ""

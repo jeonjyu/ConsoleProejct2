@@ -1,0 +1,8 @@
+C:\Users\jihoo\Documents\GitHub\ConsoleProejct2\ShapeSort\bin\Debug\ShapeSort.exe.config
+C:\Users\jihoo\Documents\GitHub\ConsoleProejct2\ShapeSort\bin\Debug\ShapeSort.exe
+C:\Users\jihoo\Documents\GitHub\ConsoleProejct2\ShapeSort\bin\Debug\ShapeSort.pdb
+C:\Users\jihoo\Documents\GitHub\ConsoleProejct2\ShapeSort\obj\Debug\ShapeSort.csproj.AssemblyReference.cache
+C:\Users\jihoo\Documents\GitHub\ConsoleProejct2\ShapeSort\obj\Debug\ShapeSort.csproj.CoreCompileInputs.cache
+C:\Users\jihoo\Documents\GitHub\ConsoleProejct2\ShapeSort\obj\Debug\ShapeSort.exe
+C:\Users\jihoo\Documents\GitHub\ConsoleProejct2\ShapeSort\obj\Debug\ShapeSort.pdb
+C:\Users\jihoo\Documents\GitHub\ConsoleProejct2\ShapeSort\obj\Debug\ShapeSort.exe.config
