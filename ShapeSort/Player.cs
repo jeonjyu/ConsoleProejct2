@@ -60,6 +60,13 @@ namespace ShapeSort
                 Life--;
             }
         }
-        
+
+        public void PrintPlayerLife()
+        {
+            for (int i = 0; i < Life; i++)
+            {
+                Console.Write("❤");
+            }
+        }
     }
 }
