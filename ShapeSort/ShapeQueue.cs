@@ -34,6 +34,7 @@ namespace ShapeSort
 
         public void PrintQueue()
         {
+            Console.WriteLine("————————————————————————————————————————————————————————————");
             foreach (var shape in _shapesQueue)
             {
                 switch (shape)
@@ -53,6 +54,7 @@ namespace ShapeSort
                 }
             }
             Console.WriteLine();
+            Console.WriteLine("————————————————————————————————————————————————————————————");
         }
     }
 }
