@@ -16,6 +16,7 @@ namespace ShapeSort
             // 시작 안내
             // 시작 함수 추가
             Console.WriteLine("아무키나 눌러 시작하기");
+            Console.ReadKey();
         }
         
         // 플레이 화면 출력 함수
@@ -28,6 +29,7 @@ namespace ShapeSort
         // 플레이어 입력이 들어오면 갱신
         static public void Update(Player inPlayer, ShapeQueue inShapes)
         {
+            Console.Clear();
             // 남은 생명 출력
             inPlayer.PrintPlayerLife();
             // 대기열 출력
@@ -39,6 +41,7 @@ namespace ShapeSort
         // 승패 출력 함수
         static public void PrintResult(int count, int life)
         {
+            Console.Clear();
             // 승리/패배 문구 출력
             // 승리의 경우
             // 큐를 모두 소진 + 생명이 1 이상
