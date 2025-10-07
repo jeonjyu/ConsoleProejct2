@@ -32,5 +32,27 @@ namespace ShapeSort
         {
             return _shapesQueue.Dequeue();
         }
+
+        public void PrintQueue()
+        {
+            foreach (var shape in _shapesQueue)
+            {
+                switch (shape)
+                {
+                    case Shape.Circle:
+                        Console.Write("● ");
+                        break;
+                    case Shape.Square:
+                        Console.Write("■ ");
+                        break;
+                    case Shape.Triangle:
+                        Console.Write("▲ ");
+                        break;
+                    default:
+                        Console.Write("▩ ");
+                        break;
+                }
+            }
+        }
     }
 }
