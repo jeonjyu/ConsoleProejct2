@@ -5,6 +5,7 @@ namespace ShapeSort
 {
     public class ShapeQueue
     {
+        Random random = new Random();
         private Queue<Shape> _shapesQueue = new Queue<Shape>(30);
 
         public int Counts()
@@ -19,12 +20,10 @@ namespace ShapeSort
 
         public Queue<Shape> EqShapes()
         {
-            Random random = new Random();
-            for (int i = 0; i < _shapesQueue.Count; i++)
+            for (int i = 0; i < 30; i++)
             {
                 _shapesQueue.Enqueue((Shape)random.Next(0, 4));
             }
-
             return _shapesQueue;
         }
 
