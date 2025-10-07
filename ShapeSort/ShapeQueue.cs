@@ -42,16 +42,17 @@ namespace ShapeSort
                         Console.Write("● ");
                         break;
                     case Shape.Square:
-                        Console.Write("■ ");
+                        Console.Write("□ ");
                         break;
                     case Shape.Triangle:
                         Console.Write("▲ ");
                         break;
                     default:
-                        Console.Write("▩ ");
+                        Console.Write("⨳ ");
                         break;
                 }
             }
+            Console.WriteLine();
         }
     }
 }
