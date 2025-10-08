@@ -37,24 +37,29 @@ namespace ShapeSort
             Console.WriteLine("————————————————————————————————————————————————————————————");
             foreach (var shape in _shapesQueue)
             {
-                switch (shape)
-                {
-                    case Shape.Circle:
-                        Console.Write("● ");
-                        break;
-                    case Shape.Square:
-                        Console.Write("□ ");
-                        break;
-                    case Shape.Triangle:
-                        Console.Write("▲ ");
-                        break;
-                    default:
-                        Console.Write("⨳ ");
-                        break;
-                }
+                PrintShape(shape);
             }
             Console.WriteLine();
             Console.WriteLine("————————————————————————————————————————————————————————————");
+        }
+
+        public void PrintShape(Shape inShType)
+        {
+            switch (inShType)
+            {
+                case Shape.Circle:
+                    Console.Write("● ");
+                    break;
+                case Shape.Square:
+                    Console.Write("□ ");
+                    break;
+                case Shape.Triangle:
+                    Console.Write("▲ ");
+                    break;
+                default:
+                    Console.Write("⨳ ");
+                    break;
+            }
         }
     }
 }
