@@ -49,10 +49,10 @@ namespace ShapeSort
         /// <br/>분류가 일치하지 않는다면 플레이어 생명 - 1
         /// </summary>
         /// <param name="inShape">플레이어가 입력한 도형 타입</param>
-        /// <param name="desBasket">제시된 도형의 타입</param>
+        /// <param name="desBasket">올바른 도형의 타입</param>
         public void SortShape(Shape inShape, Shape desBasket)
         {
-            if (desBasket == Shape.Etc && inShape != desBasket)
+            if (inShape != desBasket)
             {
                 Life--;
             }
