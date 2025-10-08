@@ -20,12 +20,13 @@ namespace ShapeSort
         }
         
         // 플레이 화면 출력 함수
-        static public void PrintPlayScreen()
+        static public void PrintPlayScreen(Shape currentShape)
         {
             // 플레이 화면 출력
             Console.WriteLine("             _____ ____      _    ____  _   _               \n            |_   _|  _ \\    / \\  / ___|| | | |              \n              | | | |_) |  / _ \\ \\___ \\| |_| |              \n              | | |  _ <  / ___ \\ ___) |  _  |              \n              |_| |_| \\_\\/_/   \\_\\____/|_| |_|              ");
             Console.WriteLine("————————————————————————————————————————————————————————————");
-            Console.WriteLine("\n\n\n");
+            // 도형 출력
+            Console.WriteLine($"\n {currentShape} \n");
             Console.WriteLine("————————————————————————————————————————————————————————————");
             Console.WriteLine("╔══════════════════╗╔══════════════════╗╔══════════════════╗\n║      ▄████▄      ║║     ▐▀▀▀▀▀▀▌     ║║        ▄▄        ║\n║     ▐██████▌     ║║     ▐      ▌     ║║      ▄████▄      ║\n║      ▀████▀      ║║     ▐▄▄▄▄▄▄▌     ║║     ████████     ║\n╚══════════════════╝╚══════════════════╝╚══════════════════╝");
         }
@@ -40,7 +41,7 @@ namespace ShapeSort
             // 대기열 출력
             inShapes.PrintQueue();
             // 플레이 화면 출력
-            PrintPlayScreen();
+            PrintPlayScreen(inShapes.CurrentShape());
         }
         
         // 승패 출력 함수
