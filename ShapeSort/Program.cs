@@ -26,10 +26,12 @@ namespace ShapeSort
             
             // watch.Start();
             // 분류 반복 시작
-            while (player.Life > 0 || shapes.Counts() != 0)
+            while (shapes.Counts() > 0)
             {
+                if (player.Life < 0)  break; 
                 // 화면 변경 + 화면 출력
                 Screen.Update(player, shapes);
+                Shape currentShape = shapes.CurrentShape();
                 player.SortShape(player.GetPlayerInput(), shapes.DqShapes());
             }
             
