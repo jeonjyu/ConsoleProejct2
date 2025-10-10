@@ -51,6 +51,7 @@ namespace ShapeSort
             return _shapesQueue.Dequeue();
         }
 
+        // 모든 대기열 요소를 출력하는 함수
         public void PrintQueue()
         {
             Console.WriteLine("————————————————————————————————————————————————————————————");
