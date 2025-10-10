@@ -7,7 +7,11 @@ namespace ShapeSort
     {
         int life;
 
-        public int Life { get; set; }
+        public int Life
+        {
+            get { return life;}
+            set { life = value; }
+        }
 
         public Player()
         {
@@ -51,16 +55,15 @@ namespace ShapeSort
         {
             if (inShape != desBasket)
             {
-                Life--;
+                Console.ForegroundColor = ConsoleColor.Red;
+                life--;
             }
         }
 
         public void PrintPlayerLife()
         {
-            for (int i = 0; i < Life; i++)
-            {
-                Console.Write("❤");
-            }
+            Console.WriteLine("♥  ⋯  " + life);
+            Console.ResetColor();
         }
     }
 }
