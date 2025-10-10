@@ -35,6 +35,25 @@ namespace ShapeSort
             Console.WriteLine("╔══════════════════╗╔══════════════════╗╔══════════════════╗\n║      ▄████▄      ║║     ▐▀▀▀▀▀▀▌     ║║        ▄▄        ║\n║     ▐██████▌     ║║     ▐      ▌     ║║      ▄████▄      ║\n║      ▀████▀      ║║     ▐▄▄▄▄▄▄▌     ║║     ████████     ║\n╚══════════════════╝╚══════════════════╝╚══════════════════╝");
         }
         
+        // 플레이어가 분류해야 할 도형을 출력하는 함수
+        public static void PrintShapeChar(ShapeType currentShape)
+        {
+            switch (currentShape)
+            {
+                case ShapeType.Circle:
+                    Console.WriteLine("                           ▄████▄                           \n                          ▐██████▌                          \n                           ▀████▀                           ");
+                    break;
+                case ShapeType.Square:
+                    Console.WriteLine("                          ▐▀▀▀▀▀▀▌                          \n                          ▐      ▌                          \n                          ▐▄▄▄▄▄▄▌                          ");
+                    break;
+                case ShapeType.Triangle:
+                    Console.WriteLine("                             ▄▄                             \n                           ▄████▄                           \n                          ████████                          ");
+                    break;
+                case ShapeType.Cross:
+                    Console.WriteLine("                           XX  XX                           \n                            XXXX                            \n                           XX  XX                           ");
+                    break;
+            }
+        }
         
         // 플레이어 입력이 들어오면 갱신
         public static void Update(Player inPlayer, ShapeQueue inShapes)
