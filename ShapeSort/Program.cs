@@ -15,7 +15,6 @@ namespace ShapeSort
 
             // 시작 화면 출력
             Screen.PrintStartScreen();
-            Console.Clear();
             
             // 대기열 채우기
             ShapeQueue shapes = new ShapeQueue();
