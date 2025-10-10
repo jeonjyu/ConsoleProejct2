@@ -39,13 +39,13 @@ namespace ShapeSort
         // 플레이어 입력이 들어오면 갱신
         public static void Update(Player inPlayer, ShapeQueue inShapes)
         {
-            Console.Clear();
-            // 남은 생명 출력
-            inPlayer.PrintPlayerLife();
-            // 대기열 출력
-            inShapes.PrintQueue();
-            // 플레이 화면 출력
-            PrintPlayScreen(inShapes.CurrentShape());
+                Console.Clear();
+                // 남은 생명 출력
+                inPlayer.PrintPlayerLife();
+                // 대기열 출력
+                inShapes.PrintQueue();
+                // 플레이 화면 출력
+                PrintPlayScreen(inShapes.CurrentShape());
         }
         
         // 승패 출력 함수
