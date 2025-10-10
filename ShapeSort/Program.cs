@@ -9,9 +9,6 @@ namespace ShapeSort
 {
     internal class Program
     {
-        // static Stopwatch watch = new Stopwatch();
-        // static int timeLimit = 90;
-
         static void Main(string[] args)
         {
             Player player = new Player();
@@ -24,12 +21,12 @@ namespace ShapeSort
             ShapeQueue shapes = new ShapeQueue();
             shapes.EqShapes();
             
-            // watch.Start();
             // 분류 반복 시작
             while (shapes.Counts() > 0)
             {
                 if (player.Life < 0)  break; 
                 // 화면 변경 + 화면 출력
+
                 Screen.Update(player, shapes);
                 ShapeType currentShape = shapes.CurrentShape();
                 player.SortShape(player.GetPlayerInput(), shapes.DqShapes());
