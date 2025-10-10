@@ -3,7 +3,7 @@ using System.Data;
 
 namespace ShapeSort
 {
-    static public class Screen
+    public class Screen
     {
         // 시작화면 출력 함수
         static public void PrintStartScreen()
@@ -24,7 +24,7 @@ namespace ShapeSort
         }
         
         // 플레이 화면 출력 함수
-        static public void PrintPlayScreen(Shape currentShape)
+        public static void PrintPlayScreen(ShapeType currentShape)
         {
             // 플레이 화면 출력
             Console.WriteLine("             _____ ____      _    ____  _   _               \n            |_   _|  _ \\    / \\  / ___|| | | |              \n              | | | |_) |  / _ \\ \\___ \\| |_| |              \n              | | |  _ <  / ___ \\ ___) |  _  |              \n              |_| |_| \\_\\/_/   \\_\\____/|_| |_|              ");
