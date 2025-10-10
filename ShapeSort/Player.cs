@@ -23,7 +23,7 @@ namespace ShapeSort
         /// wasd가 아니면 다시 입력받도록 무한반복
         /// </summary>
         /// <returns>각 키에 할당된 Shape 열거형</returns>
-        public Shape GetPlayerInput()
+        public ShapeType GetPlayerInput()
         {
             while (true)
             {
@@ -31,13 +31,13 @@ namespace ShapeSort
                 switch (input.KeyChar)
                 {
                     case 'w':
-                        return Shape.Etc;
+                        return ShapeType.Cross;
                     case 'a':
-                        return Shape.Circle;
+                        return ShapeType.Circle;
                     case 's':
-                        return Shape.Square;
+                        return ShapeType.Square;
                     case 'd':
-                        return Shape.Triangle;
+                        return ShapeType.Triangle;
                     default:
                         continue;
                 }
@@ -50,7 +50,7 @@ namespace ShapeSort
         /// </summary>
         /// <param name="inShape">플레이어가 입력한 도형 타입</param>
         /// <param name="desBasket">올바른 도형의 타입</param>
-        public void SortShape(Shape inShape, Shape desBasket)
+        public void SortShape(ShapeType inShape, ShapeType desBasket)
         {
             if (inShape != desBasket)
             {

@@ -3,31 +3,50 @@ using System.Collections.Generic;
 
 namespace ShapeSort
 {
+    public enum ShapeType
+    {
+        Circle,
+        Triangle,
+        Square,
+        Cross
+    }
+    
     public class ShapeQueue
     {
+        public static Dictionary<ShapeType, string> ShapeDictionary = new Dictionary<ShapeType, string>()
+        {
+            { ShapeType.Circle, "● " },
+            { ShapeType.Square, "□ " },
+            { ShapeType.Triangle , "▲ " },
+            { ShapeType.Cross , "⨳ "}
+        };
+     
+        
         Random random = new Random();
-        private Queue<Shape> _shapesQueue = new Queue<Shape>(30);
+        private Queue<ShapeType> _shapesQueue = new Queue<ShapeType>(30);
 
         public int Counts()
         {
             return _shapesQueue.Count;
         }
 
-        public Shape CurrentShape()
+        public ShapeType CurrentShape()
         {
             return _shapesQueue.Peek();
         }
 
-        public Queue<Shape> EqShapes()
+        // 대기열 큐에 무작위로 도형을 채우는 함수
+        public Queue<ShapeType> EqShapes()
         {
             for (int i = 0; i < 30; i++)
             {
-                _shapesQueue.Enqueue((Shape)random.Next(0, 4));
+                _shapesQueue.Enqueue((ShapeType)random.Next(0, 4));
             }
             return _shapesQueue;
         }
 
-        public Shape DqShapes()
+        // 플레이어에게 도형을 전달하기 위해 대기열에서 dequeue하는 함수
+        public ShapeType DqShapes()
         {
             return _shapesQueue.Dequeue();
         }
@@ -43,23 +62,10 @@ namespace ShapeSort
             Console.WriteLine("————————————————————————————————————————————————————————————");
         }
 
-        public void PrintShape(Shape inShType)
+        // 매개변수로 들어온 도형의 문자를 딕셔너리에서 찾아 출력하는 함수
+        public void PrintShape(ShapeType inShapeKey)
         {
-            switch (inShType)
-            {
-                case Shape.Circle:
-                    Console.Write("● ");
-                    break;
-                case Shape.Square:
-                    Console.Write("□ ");
-                    break;
-                case Shape.Triangle:
-                    Console.Write("▲ ");
-                    break;
-                default:
-                    Console.Write("⨳ ");
-                    break;
-            }
+            Console.Write(ShapeDictionary[inShapeKey]);
         }
     }
 }

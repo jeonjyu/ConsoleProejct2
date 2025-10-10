@@ -31,7 +31,7 @@ namespace ShapeSort
                 if (player.Life < 0)  break; 
                 // 화면 변경 + 화면 출력
                 Screen.Update(player, shapes);
-                Shape currentShape = shapes.CurrentShape();
+                ShapeType currentShape = shapes.CurrentShape();
                 player.SortShape(player.GetPlayerInput(), shapes.DqShapes());
             }
             
