@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data;
 
 namespace ShapeSort
 {
@@ -8,14 +9,17 @@ namespace ShapeSort
         static public void PrintStartScreen()
         {
             // 타이틀
-            Console.WriteLine("도형 분류 게임");
+            Console.WriteLine("\t\t도형 분류 게임");
             
             // 규칙
-            Console.WriteLine("규칙");
+            //Console.WriteLine("\t\t{0, 7}", "규칙");
+            Console.WriteLine("\n1. ●, □, ▲을 각 바구니에, ⨳을 쓰레기통에 넣으면 됩니다.\n");
+            Console.WriteLine("2. 플레이어의 ♥는 5개, ♥가 0 이하로 떨어지면 플레이어의 패배입니다.\n");
+            Console.WriteLine("3. ♥가 다 소진되기 전에 대기열에 있는 도형을 모두 분류하면 플레이어의 승리입니다.\n\n");
             
             // 시작 안내
             // 시작 함수 추가
-            Console.WriteLine("아무키나 눌러 시작하기");
+            Console.WriteLine("\t\t→아무키나 눌러 시작하기");
             Console.ReadKey();
         }
         
@@ -26,14 +30,14 @@ namespace ShapeSort
             Console.WriteLine("             _____ ____      _    ____  _   _               \n            |_   _|  _ \\    / \\  / ___|| | | |              \n              | | | |_) |  / _ \\ \\___ \\| |_| |              \n              | | |  _ <  / ___ \\ ___) |  _  |              \n              |_| |_| \\_\\/_/   \\_\\____/|_| |_|              ");
             Console.WriteLine("————————————————————————————————————————————————————————————");
             // 도형 출력
-            Console.WriteLine($"\n {currentShape} \n");
+            PrintShapeChar(currentShape);
             Console.WriteLine("————————————————————————————————————————————————————————————");
             Console.WriteLine("╔══════════════════╗╔══════════════════╗╔══════════════════╗\n║      ▄████▄      ║║     ▐▀▀▀▀▀▀▌     ║║        ▄▄        ║\n║     ▐██████▌     ║║     ▐      ▌     ║║      ▄████▄      ║\n║      ▀████▀      ║║     ▐▄▄▄▄▄▄▌     ║║     ████████     ║\n╚══════════════════╝╚══════════════════╝╚══════════════════╝");
         }
         
         
         // 플레이어 입력이 들어오면 갱신
-        static public void Update(Player inPlayer, ShapeQueue inShapes)
+        public static void Update(Player inPlayer, ShapeQueue inShapes)
         {
             Console.Clear();
             // 남은 생명 출력
@@ -53,11 +57,24 @@ namespace ShapeSort
             // 큐를 모두 소진 + 생명이 1 이상
             if (count == 0 && life > 0)
             {
-                Console.WriteLine("플레이어 승리");
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("\n                   ██╗    ██╗██╗███╗   ██╗                  \n                   ██║    ██║██║████╗  ██║                  \n                   ██║ █╗ ██║██║██╔██╗ ██║                  \n                   ██║███╗██║██║██║╚██╗██║                  \n                   ╚███╔███╔╝██║██║ ╚████║                  \n                    ╚══╝╚══╝ ╚═╝╚═╝  ╚═══╝                  ");
+                Console.ResetColor();
+                Console.WriteLine("\n당신은 모든 도형을 분류하는데에 성공했습니다. 축하합니다! ");
+
             }
             // 패배의 경우
             // 생명이 0인 경우
-            Console.WriteLine("플레이어 패배");
+            else
+            {
+                Console.ForegroundColor = ConsoleColor.DarkGray;
+                Console.WriteLine("\n          ██████╗ ██████╗ ██████╗ ███████╗                  \n         ██╔═══██╗██╔══██╗██╔══██╗██╔════╝                  \n         ██║   ██║██████╔╝██████╔╝███████╗                  \n         ██║   ██║██╔═══╝ ██╔═══╝ ╚════██║                  \n         ╚██████╔╝██║     ██║     ███████║██╗██╗██╗         \n          ╚═════╝ ╚═╝     ╚═╝     ╚══════╝╚═╝╚═╝╚═╝         ");
+                Console.ResetColor();
+                Console.WriteLine("\n당신은 아쉽게도 주어진 기회를 모두 소진했습니다. \n다음 기회를 노려보세요");
+            }
+            Console.WriteLine("\t\t→ 종료하기");
+            Console.ReadKey();
+            Console.Clear();
         }
 
     }
