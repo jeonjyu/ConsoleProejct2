@@ -73,8 +73,8 @@ namespace ShapeSort
             Console.Clear();
             // 승리/패배 문구 출력
             // 승리의 경우
-            // 큐를 모두 소진 + 생명이 1 이상
-            if (count == 0 && life > 0)
+            // 큐를 모두 소진 + 생명이 0 이상
+            if (count == 0 && life >= 0)
             {
                 Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("\n                   ██╗    ██╗██╗███╗   ██╗                  \n                   ██║    ██║██║████╗  ██║                  \n                   ██║ █╗ ██║██║██╔██╗ ██║                  \n                   ██║███╗██║██║██║╚██╗██║                  \n                   ╚███╔███╔╝██║██║ ╚████║                  \n                    ╚══╝╚══╝ ╚═╝╚═╝  ╚═══╝                  ");
